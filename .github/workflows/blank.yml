@@ -38,7 +38,7 @@ jobs:
           echo "Carrera: Ingeniería de Sistemas"
           echo "=================================="
       
-      - name: variables de entorno secretas
+      -       - name: variables de entorno secretas
         env:
           USER_SECRET: ${{ secrets.user }}
           PASSWORD_SECRET: ${{ secrets.password }}
@@ -47,8 +47,8 @@ jobs:
           echo "=================================="
           echo "   VARIABLES SECRETAS"
           echo "=================================="
-          echo "user: ${USER_SECRET:0:1}$(printf '%*s' $((${#USER_SECRET}-2)) | tr ' ' '*')${USER_SECRET: -1}"
-          echo "password: $(printf '%*s' ${#PASSWORD_SECRET} | tr ' ' '*')"
+          echo "user: *****"
+          echo "password: *****"
           echo "=================================="
       
       - name: variables abiertas
