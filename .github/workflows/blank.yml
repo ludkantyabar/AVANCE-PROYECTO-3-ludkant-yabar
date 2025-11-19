@@ -59,6 +59,17 @@ jobs:
           echo "=================================="
           echo "versión de mi proyecto: ${{ vars.version_de_mi_proyecto}}"
           echo "=================================="
+
+      - name: variables abiertas 2
+        env:
+          VERSION_PROYECTO: ${{ vars.version_de_mi_proyecto }}
+        run: |
+          echo ""
+          echo "=================================="
+          echo "   VARIABLES DE CONFIGURACIÓN"
+          echo "=================================="
+          echo "versión de mi proyecto: $VERSION_PROYECTO"
+          echo "=================================="
       
       - name: Resumen de ejecución
         run: |
