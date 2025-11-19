@@ -50,10 +50,6 @@ jobs:
           echo "Usuario: ${{ env.user }}"
           echo "Password: ${{ env.password }}"
           echo "=================================="
-     
-
-
-
 
       - name: variables abiertas
         run: |
@@ -61,7 +57,7 @@ jobs:
           echo "=================================="
           echo "   VARIABLES DE CONFIGURACIÓN"
           echo "=================================="
-          echo "versión de mi proyecto: ${{ vars.version_de_mi_proyecto }}"
+          echo "versión de mi proyecto: ${{ vars.version_de_mi_proyecto}}"
           echo "=================================="
       
       - name: Resumen de ejecución
