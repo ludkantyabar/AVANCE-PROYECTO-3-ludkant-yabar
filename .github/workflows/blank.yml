@@ -47,8 +47,8 @@ jobs:
           echo "=================================="
           echo "   VARIABLES SECRETAS"
           echo "=================================="
-          echo "user: *****"
-          echo "password: *****"
+          echo "user: ${{ env.USER_SECRET }}"
+          echo "password: ${{ env.PASSWORD_SECRET }}"
           echo "=================================="
       
       - name: variables abiertas
